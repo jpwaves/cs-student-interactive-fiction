@@ -1,0 +1,11 @@
+.gradebar-container {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.gradebar-container label {
+    font-size: 1.25rem;
+}

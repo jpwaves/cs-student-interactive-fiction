@@ -1,0 +1,27 @@
+.storybox-container {
+    background: grey;
+    border: 1px black solid;
+    max-width: 800px;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5em;
+}
+
+.scenario-title,
+.scenario {
+    width: 80%;
+}
+
+.scenario-title {
+    margin-top: 1.5rem;
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+.scenario {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}

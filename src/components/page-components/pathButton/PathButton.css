@@ -1,0 +1,19 @@
+.path-button {
+    border: 2px solid black;
+    border-radius: 50px;
+    color: hsl(132, 0%, 10%);
+    background-color: hsl(132, 0%, 80%);
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+    width: 100%;
+    transition: background-color 300ms ease-in-out,
+    color 300ms ease-in-out,
+    border-color 300ms ease-in-out;
+}
+
+.path-button:hover {
+    cursor: pointer;
+    background-color: hsl(132, 0%, 10%);
+    color: hsl(132, 0%, 80%);
+    border-color: hsl(132, 0%, 10%);
+}
