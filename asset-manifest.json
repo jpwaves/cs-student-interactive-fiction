@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/cs-student-interactive-fiction/static/css/main.ec8e1472.chunk.css",
+    "main.js": "/cs-student-interactive-fiction/static/js/main.9eda3081.chunk.js",
+    "main.js.map": "/cs-student-interactive-fiction/static/js/main.9eda3081.chunk.js.map",
+    "runtime-main.js": "/cs-student-interactive-fiction/static/js/runtime-main.21404a26.js",
+    "runtime-main.js.map": "/cs-student-interactive-fiction/static/js/runtime-main.21404a26.js.map",
+    "static/js/2.1f6194a5.chunk.js": "/cs-student-interactive-fiction/static/js/2.1f6194a5.chunk.js",
+    "static/js/2.1f6194a5.chunk.js.map": "/cs-student-interactive-fiction/static/js/2.1f6194a5.chunk.js.map",
+    "static/js/3.2a990095.chunk.js": "/cs-student-interactive-fiction/static/js/3.2a990095.chunk.js",
+    "static/js/3.2a990095.chunk.js.map": "/cs-student-interactive-fiction/static/js/3.2a990095.chunk.js.map",
+    "index.html": "/cs-student-interactive-fiction/index.html",
+    "static/css/main.ec8e1472.chunk.css.map": "/cs-student-interactive-fiction/static/css/main.ec8e1472.chunk.css.map",
+    "static/js/2.1f6194a5.chunk.js.LICENSE.txt": "/cs-student-interactive-fiction/static/js/2.1f6194a5.chunk.js.LICENSE.txt",
+    "static/media/intellij.11b68713.png": "/cs-student-interactive-fiction/static/media/intellij.11b68713.png",
+    "static/media/App.css": "/cs-student-interactive-fiction/static/media/windows-background.9684767a.jpg",
+    "static/media/notepad.0e4ec9bb.png": "/cs-student-interactive-fiction/static/media/notepad.0e4ec9bb.png",
+    "static/media/vim.e694faea.png": "/cs-student-interactive-fiction/static/media/vim.e694faea.png",
+    "static/media/vscode.6acf7130.png": "/cs-student-interactive-fiction/static/media/vscode.6acf7130.png",
+    "static/media/xcode.1684199e.png": "/cs-student-interactive-fiction/static/media/xcode.1684199e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21404a26.js",
+    "static/js/2.1f6194a5.chunk.js",
+    "static/css/main.ec8e1472.chunk.css",
+    "static/js/main.9eda3081.chunk.js"
+  ]
+}
