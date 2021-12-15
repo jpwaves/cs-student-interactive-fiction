@@ -10,7 +10,6 @@ export default function PartnerAssignment(props) {
         {
             path: "Contact them now",
             handleOption: () => {
-                console.log("nav to options for time");
                 setStartEarly(true);
                 updateScenario(6);
             }
@@ -18,7 +17,6 @@ export default function PartnerAssignment(props) {
         {
             path: "Wait until later",
             handleOption: () => {
-                console.log("nav to optiosn w/o time");
                 setStartEarly(false);
                 updateScenario(6);
             }

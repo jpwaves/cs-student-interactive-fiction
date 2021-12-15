@@ -2,7 +2,7 @@ import React from "react";
 import Scenario from "../../page-components/scenario/Scenario";
 
 export default function BeginSemester(props) {
-  const { updateScenario } = props;
+  const { updateScenario, setBackground } = props;
   const title = "Beginning of the Semester!";
   const scenario = `Tomorrow is the first day of the semester. As a CS student, 
     having a laptop you can take to class and do your assignments on is a must. 
@@ -16,21 +16,21 @@ export default function BeginSemester(props) {
     {
       path: "Windows",
       handleOption: () => {
-        console.log("load choose editor html page component with windows background");
+        setBackground("windows");
         updateScenario(2);
       }
     },
     {
       path: "MacOS",
       handleOption: () => {
-        console.log("load choose editor html page component with macos background");
+        setBackground("macos");
         updateScenario(2);
       }
     },
     {
       path: "Linux",
       handleOption: () => {
-        console.log("load choose editor html page component with linux background");
+        setBackground("linux");
         updateScenario(2);
       }
     },

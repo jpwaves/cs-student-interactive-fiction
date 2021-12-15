@@ -6,7 +6,8 @@ const earlyScenario = `Good news! You're partner responded quickly and now you b
 const lateScenario = `Unfortunately, your partner didn't contact you either. Now you both have only 2 days left to complete the assignment and you just started. Although you've been able to complete a good chunk of it, you've run into an error with your code that you can figure out. What will you do?`;
 
 export default function PartnerOptions(props) {
-    const { updateScenario, startEarly, setUsedProf } = props;
+    const { updateScenario, startEarly, setUsedProf, setResult } = props;
+    console.log("start early: " + startEarly);
     const title = "First Partner Assignment Pt. 2";
     const scenario = startEarly ? earlyScenario : lateScenario;
 
@@ -14,12 +15,14 @@ export default function PartnerOptions(props) {
         {
             path: "Check Stack Overflow",
             handleOption: () => {
+                setResult(startEarly ? 1 : 2);
                 updateScenario(8);
             }
         },
         {
             path: "Ask on Piazza",
             handleOption: () => {
+                setResult(startEarly ? 3 : (Math.floor(Math.random() * 100 + 1) > 50 ? 4 : 5));
                 updateScenario(8);
             }
         },
@@ -27,6 +30,9 @@ export default function PartnerOptions(props) {
             path: "Go to Office Hours",
             handleOption: () => {
                 setUsedProf(false);
+                if (startEarly) {
+                    setResult(6);
+                }
                 updateScenario(startEarly ? 8 : 7);
             }
         },
@@ -34,19 +40,23 @@ export default function PartnerOptions(props) {
             path: "Talk to the Professor",
             handleOption: () => {
                 setUsedProf(true);
+                if (startEarly) {
+                    setResult(9);
+                }
                 updateScenario(startEarly ? 8 : 7);
             }
         },
         {
             path: "Ask on CS Khoury Discord servers",
             handleOption: () => {
+                setResult(startEarly ? 12 : (Math.floor(Math.random() * 100 + 1) > 50 ? 13 : 14));
                 updateScenario(8);
             }
         },
         {
             path: "Plagarizing code from the Internet",
             handleOption: () => {
-                updateScenario(100000);
+                updateScenario(16);
             }
         },
     ];

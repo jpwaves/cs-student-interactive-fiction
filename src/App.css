@@ -1,9 +1,9 @@
+body {
+  background-color: hsl(0, 0%, 90%);
+}
+
 .container {
   width: 100%;
-  background-color: antiquewhite;
-  /* background-image: url("./assets/linux-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; */
   padding: 2em 4em;
   display: flex;
   flex-direction: column;
@@ -14,3 +14,25 @@
 /**
   make the background be in a div that is absolutely positioned and doesn't move
 */
+.app-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.windows {
+  background-image: url("./assets/windows-background.jpg");
+}
+
+.macos {
+  background-image: url("./assets/macos-background.jpg");
+}
+
+.linux {
+  background-image: url("./assets/linux-background.jpg");
+}

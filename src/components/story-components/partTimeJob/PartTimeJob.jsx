@@ -3,10 +3,8 @@ import Scenario from "../../page-components/scenario/Scenario";
 
 export default function PartTimeJob(props) {
     const { updateScenario, updateTM } = props;
-    const title = "Choose an Editor";
-    const scenario = `Now that you have a laptop, you need to figure out what
-        editor you are going to use to do your coding on. Like laptops, there are
-        many options available. Here are some common options:`;
+    const title = "Get a Part-time Job?";
+    const scenario = `Like any college student, money is limited. This could be partially solved by getting a part-time job. However, this will cut into time that could be used for doing coursework. Will you choose to get a part-time job`;
 
     const options = [
         {
@@ -20,7 +18,6 @@ export default function PartTimeJob(props) {
         {
             path: "No",
             handleOption: () => {
-                console.log("do nothing, go to next scene");
                 updateScenario(4);
             }
         },
