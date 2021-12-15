@@ -1,6 +1,9 @@
+
 .storybox-container {
-    background: grey;
-    border: 1px black solid;
+    background: hsl(0, 0%, 10%);
+    border-radius: 5px;
+    border: 2px hsl(0, 0%, 8%) solid;
+    color: hsl(0, 0%, 80%);
     max-width: 800px;
     min-width: 100%;
     display: flex;

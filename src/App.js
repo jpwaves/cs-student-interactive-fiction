@@ -90,7 +90,7 @@ function App() {
     3: <PartTimeJob updateScenario={updateScenario} updateTM={multiplyTM} />,
     4: <FirstFewWeeks updateScenario={updateScenario} updateTM={multiplyTM} />,
     5: <PartnerAssignment updateScenario={updateScenario} setStartEarly={setStartEarly} updateTM={multiplyTM} />,
-    6: <PartnerOptions updateScenario={updateScenario} startEarly={startEarly} setUsedProf={setUsedProf} setResult={setResult} />,
+    6: <PartnerOptions updateScenario={updateScenario} startEarly={startEarly} setUsedProf={setUsedProf} setResult={setResult} updateTM={multiplyTM} />,
     7: <PartnerSubOptions updateScenario={updateScenario} usedProf={usedProf} setResult={setResult} updateTM={multiplyTM} />,
     8: <PartnerResult updateScenario={updateScenario} result={result} />,
     9: <SideProjects updateScenario={updateScenario} updateTM={multiplyTM} />,

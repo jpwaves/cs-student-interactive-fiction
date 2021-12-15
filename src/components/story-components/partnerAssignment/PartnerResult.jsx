@@ -17,7 +17,7 @@ const results = {
     9: "You were able to talk to the professor and get help with the assignment. You were also able to establish a good relationship with the professor, which could help in the future.",
     10: "You finished the assignment on time, barely. However, your sleep schedule is now messed up and it'll take a lot of effort to fix it.",
     11: "You didn't have enough time to finish the assignment on time and had to turn in the assignment late.",
-    // ask on cs khoury servers
+    // ask on cs khoury discord servers
     12: "Several students gave suggestions and based off those you were able to figure out the problem and turn in the assignment early. You ended up getting high marks on the assignment.",
     13: "Several students did end up responding, and you barely turned the assignment in on time.",
     14: "Several students did end up responding, but by then it was too late and you had to turn in the assignment late.",

@@ -14,20 +14,28 @@ export default function PartnerSubOptions(props) {
         {
             path: "Stay up and work on the homework",
             handleOption: () => {
-                updateTM(0.75);
-                setResult(Math.floor(Math.random() * 100 + 1) > 60 ?
-                    (usedProf ? 11 : 8) :
-                    (usedProf ? 10 : 7));
+                const n = Math.floor(Math.random() * 100 + 1);
+                if (n > 60) {
+                    setResult(usedProf ? 11 : 8);
+                    updateTM(1.1);
+                } else {
+                    setResult(usedProf ? 10 : 7);
+                    updateTM(0.75);
+                }
                 updateScenario(8);
             }
         },
         {
             path: "Sleep",
             handleOption: () => {
-                updateTM(1.1);
-                setResult(Math.floor(Math.random() * 100 + 1) > 30 ?
-                    (usedProf ? 11 : 8) :
-                    (usedProf ? 10 : 7));
+                const n = Math.floor(Math.random() * 100 + 1);
+                if (n > 30) {
+                    setResult(usedProf ? 11 : 8);
+                    updateTM(1.2);
+                } else {
+                    setResult(usedProf ? 10 : 7);
+                    updateTM(0.9);
+                }
                 updateScenario(8);
             }
         },

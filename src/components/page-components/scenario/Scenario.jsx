@@ -8,7 +8,6 @@ export default function Scenario(props) {
 
     return (
         <div className="component-container">
-            <h1>Beginning of the Semester!</h1>
             <StoryBox title={title} description={desc} />
             <ButtonList options={options} />
         </div>

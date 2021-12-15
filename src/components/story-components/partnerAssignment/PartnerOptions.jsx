@@ -6,7 +6,7 @@ const earlyScenario = `Good news! You're partner responded quickly and now you b
 const lateScenario = `Unfortunately, your partner didn't contact you either. Now you both have only 2 days left to complete the assignment and you just started. Although you've been able to complete a good chunk of it, you've run into an error with your code that you can figure out. What will you do?`;
 
 export default function PartnerOptions(props) {
-    const { updateScenario, startEarly, setUsedProf, setResult } = props;
+    const { updateScenario, startEarly, setUsedProf, setResult, updateTM } = props;
     console.log("start early: " + startEarly);
     const title = "First Partner Assignment Pt. 2";
     const scenario = startEarly ? earlyScenario : lateScenario;
@@ -15,14 +15,32 @@ export default function PartnerOptions(props) {
         {
             path: "Check Stack Overflow",
             handleOption: () => {
-                setResult(startEarly ? 1 : 2);
+                if (startEarly) {
+                    setResult(1);
+                    updateTM(0.8);
+                } else {
+                    setResult(2);
+                    updateTM(1.25);
+                }
                 updateScenario(8);
             }
         },
         {
             path: "Ask on Piazza",
             handleOption: () => {
-                setResult(startEarly ? 3 : (Math.floor(Math.random() * 100 + 1) > 50 ? 4 : 5));
+                if (startEarly) {
+                    setResult(3);
+                    updateTM(0.8);
+                } else {
+                    const n = Math.floor(Math.random() * 100) + 1;
+                    if (n > 50) {
+                        setResult(4);
+                        updateTM(0.9);
+                    } else {
+                        setResult(5);
+                        updateTM(1.25);
+                    }
+                }
                 updateScenario(8);
             }
         },
@@ -32,6 +50,7 @@ export default function PartnerOptions(props) {
                 setUsedProf(false);
                 if (startEarly) {
                     setResult(6);
+                    updateTM(0.75);
                 }
                 updateScenario(startEarly ? 8 : 7);
             }
@@ -42,6 +61,7 @@ export default function PartnerOptions(props) {
                 setUsedProf(true);
                 if (startEarly) {
                     setResult(9);
+                    updateTM(0.6);
                 }
                 updateScenario(startEarly ? 8 : 7);
             }
@@ -49,7 +69,19 @@ export default function PartnerOptions(props) {
         {
             path: "Ask on CS Khoury Discord servers",
             handleOption: () => {
-                setResult(startEarly ? 12 : (Math.floor(Math.random() * 100 + 1) > 50 ? 13 : 14));
+                if (startEarly) {
+                    setResult(12);
+                    updateTM(0.8);
+                } else {
+                    const n = Math.floor(Math.random() * 100) + 1;
+                    if (n > 50) {
+                        setResult(13);
+                        updateTM(0.9);
+                    } else {
+                        setResult(14);
+                        updateTM(1.25);
+                    }
+                }
                 updateScenario(8);
             }
         },
