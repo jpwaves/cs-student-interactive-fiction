@@ -19,7 +19,7 @@ export default function PartnerAssignment(props) {
             path: "Wait until later",
             handleOption: () => {
                 setStartEarly(false);
-                updateTM(1.1);
+                updateTM(1.25);
                 updateScenario(6);
             }
         },

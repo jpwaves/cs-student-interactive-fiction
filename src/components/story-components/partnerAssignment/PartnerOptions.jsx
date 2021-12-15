@@ -17,7 +17,7 @@ export default function PartnerOptions(props) {
             handleOption: () => {
                 if (startEarly) {
                     setResult(1);
-                    updateTM(0.8);
+                    updateTM(0.75);
                 } else {
                     setResult(2);
                     updateTM(1.25);
@@ -30,7 +30,7 @@ export default function PartnerOptions(props) {
             handleOption: () => {
                 if (startEarly) {
                     setResult(3);
-                    updateTM(0.8);
+                    updateTM(0.75);
                 } else {
                     const n = Math.floor(Math.random() * 100) + 1;
                     if (n > 50) {
@@ -38,7 +38,7 @@ export default function PartnerOptions(props) {
                         updateTM(0.9);
                     } else {
                         setResult(5);
-                        updateTM(1.25);
+                        updateTM(1.35);
                     }
                 }
                 updateScenario(8);
@@ -61,7 +61,7 @@ export default function PartnerOptions(props) {
                 setUsedProf(true);
                 if (startEarly) {
                     setResult(9);
-                    updateTM(0.6);
+                    updateTM(0.5);
                 }
                 updateScenario(startEarly ? 8 : 7);
             }
@@ -71,7 +71,7 @@ export default function PartnerOptions(props) {
             handleOption: () => {
                 if (startEarly) {
                     setResult(12);
-                    updateTM(0.8);
+                    updateTM(0.75);
                 } else {
                     const n = Math.floor(Math.random() * 100) + 1;
                     if (n > 50) {
@@ -79,7 +79,7 @@ export default function PartnerOptions(props) {
                         updateTM(0.9);
                     } else {
                         setResult(14);
-                        updateTM(1.25);
+                        updateTM(1.35);
                     }
                 }
                 updateScenario(8);

@@ -17,7 +17,7 @@ export default function PartnerSubOptions(props) {
                 const n = Math.floor(Math.random() * 100 + 1);
                 if (n > 60) {
                     setResult(usedProf ? 11 : 8);
-                    updateTM(1.1);
+                    updateTM(1.25);
                 } else {
                     setResult(usedProf ? 10 : 7);
                     updateTM(0.75);
@@ -31,10 +31,10 @@ export default function PartnerSubOptions(props) {
                 const n = Math.floor(Math.random() * 100 + 1);
                 if (n > 30) {
                     setResult(usedProf ? 11 : 8);
-                    updateTM(1.2);
+                    updateTM(1.4);
                 } else {
                     setResult(usedProf ? 10 : 7);
-                    updateTM(0.9);
+                    updateTM(0.8);
                 }
                 updateScenario(8);
             }

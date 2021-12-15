@@ -43,7 +43,7 @@ export default function ChooseEditor(props) {
             path: "Notepad",
             handleOption: () => {
                 setEditorIcon(notepad);
-                updateTM(2);
+                updateTM(4);
                 updateScenario(3);
             }
         },
@@ -51,7 +51,7 @@ export default function ChooseEditor(props) {
             path: "Vim",
             handleOption: () => {
                 setEditorIcon(vim);
-                Math.floor(Math.random() * 100) + 1 > 10 ? updateTM(2) : updateTM(1.1);
+                Math.floor(Math.random() * 100) + 1 > 10 ? updateTM(3) : updateTM(1.5);
                 updateScenario(3);
             }
         },
