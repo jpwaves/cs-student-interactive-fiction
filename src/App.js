@@ -26,7 +26,7 @@ import ChooseEditor from "./components/story-components/chooseEditor/ChooseEdito
 function App() {
   const [grade, setGrade] = useState(100);
   // lower time mult is better (default is 2.5)
-  const [timeMultiplier, setTimeMultiplier] = useState(2.5);
+  const [timeMultiplier, setTimeMultiplier] = useState(1);
   const [background, setBackground] = useState("");
   const [scenarioIdx, setScenarioIdx] = useState(0);
   const [scenario, setScenario] = useState(<></>);
@@ -39,17 +39,22 @@ function App() {
 
   const calcGrade = () => {
     console.log("timeMultiplier: " + timeMultiplier);
-    const directionMultiplier = Math.random() - 0.5;
-    const stdDev = directionMultiplier * timeMultiplier;
+    const directionMultiplier = Math.random() - Math.min(0.5 * timeMultiplier, 1);
+    const stdDev = directionMultiplier * (Math.random() * timeMultiplier * 10);
     const currGrade = Math.min(grade + stdDev, 100);
     setGrade(currGrade);
   }
 
   useEffect(() => {
-    if (scenarioIdx in keyScenarios) {
+    if (keyScenarios.includes(scenarioIdx)) {
+      console.log("calc grade");
       calcGrade();
     } else if (scenarioIdx === 16) {
       setGrade(0);
+    } else if (scenarioIdx === 0) {
+      setGrade(100);
+      setBackground("");
+      setTimeMultiplier(1);
     }
     renderScenario();
   }, [scenarioIdx]);
@@ -59,7 +64,8 @@ function App() {
   }
 
   const multiplyTM = (factor) => {
-    setTimeMultiplier(timeMultiplier * factor);
+    // cap time multiplier to be at most 7
+    setTimeMultiplier(Math.min(7, timeMultiplier * factor));
   }
 
   const incrementGrade = (amount) => {
@@ -72,9 +78,9 @@ function App() {
     2: <ChooseEditor updateScenario={updateScenario} updateTM={multiplyTM} />,
     3: <PartTimeJob updateScenario={updateScenario} updateTM={multiplyTM} />,
     4: <FirstFewWeeks updateScenario={updateScenario} updateTM={multiplyTM} />,
-    5: <PartnerAssignment updateScenario={updateScenario} setStartEarly={setStartEarly} />,
+    5: <PartnerAssignment updateScenario={updateScenario} setStartEarly={setStartEarly} updateTM={multiplyTM} />,
     6: <PartnerOptions updateScenario={updateScenario} startEarly={startEarly} setUsedProf={setUsedProf} setResult={setResult} />,
-    7: <PartnerSubOptions updateScenario={updateScenario} usedProf={usedProf} setResult={setResult} />,
+    7: <PartnerSubOptions updateScenario={updateScenario} usedProf={usedProf} setResult={setResult} updateTM={multiplyTM} />,
     8: <PartnerResult updateScenario={updateScenario} result={result} />,
     9: <SideProjects updateScenario={updateScenario} updateTM={multiplyTM} />,
     10: <NoSideProjects updateScenario={updateScenario} />,
@@ -94,8 +100,9 @@ function App() {
   const render = () => {
     return (
 
-      <div className="container"><div className={`app-background ${background}`} ref={appBkgdRef}>
-      </div><GradeBar grade={grade} />
+      <div className="container">
+        <div className={`app-background ${background}`} ref={appBkgdRef} />
+        <GradeBar grade={grade} />
         {scenario}
 
       </div>

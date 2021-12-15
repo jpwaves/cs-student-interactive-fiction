@@ -10,7 +10,7 @@ export default function SideProjects(props) {
         {
             path: "Do side projects",
             handleOption: () => {
-                updateTM(1.5)
+                updateTM(1.25)
                 updateScenario(11);
             }
         },

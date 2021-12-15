@@ -19,14 +19,14 @@ export default function ChooseEditor(props) {
         {
             path: "VS Code",
             handleOption: () => {
-                updateTM(Math.floor(Math.random() * 100 + 1) > 95 ? 0.8 : 1);
+                updateTM(Math.floor(Math.random() * 100 + 1) > 95 ? 0.7 : 1);
                 updateScenario(3);
             }
         },
         {
             path: "Notepad",
             handleOption: () => {
-                updateTM(3);
+                updateTM(2);
                 updateScenario(3);
             }
         },
