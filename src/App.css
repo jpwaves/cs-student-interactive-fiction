@@ -11,9 +11,6 @@ body {
   align-items: center;
 }
 
-/**
-  make the background be in a div that is absolutely positioned and doesn't move
-*/
 .app-background {
   position: fixed;
   top: 0;
@@ -23,6 +20,10 @@ body {
   width: 100%;
   height: 100vh;
   z-index: -1;
+}
+
+.default {
+  background-image: url("https://media.giphy.com/media/ccKEsBDAAQTrutQ9LA/giphy.gif");
 }
 
 .windows {
@@ -35,4 +36,24 @@ body {
 
 .linux {
   background-image: url("./assets/linux-background.jpg");
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editor-icon {
+  width: 64px;
+  height: auto;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
 }

@@ -21,7 +21,7 @@ export default function FirstFewWeeks(props) {
             path: "Go in-person",
             handleOption: () => {
                 console.log("add random native lang ide, make time mult 1");
-                updateTM(0.8);
+                updateTM(0.75);
                 updateScenario(5);
             }
         },
@@ -29,7 +29,7 @@ export default function FirstFewWeeks(props) {
             path: "Sleep in and attend virtually",
             handleOption: () => {
                 console.log("add vscode icon in corner, make time mult 1");
-                updateTM(1.25);
+                updateTM(1.1);
                 updateScenario(5);
             }
         },
@@ -37,7 +37,7 @@ export default function FirstFewWeeks(props) {
             path: "Sleep in and watch recordings",
             handleOption: () => {
                 console.log("add notepad icon, make time mult 3");
-                updateTM(1.5);
+                updateTM(1.25);
                 updateScenario(5);
             }
         },

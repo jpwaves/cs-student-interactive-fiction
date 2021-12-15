@@ -14,7 +14,7 @@ export default function PartnerSubOptions(props) {
         {
             path: "Stay up and work on the homework",
             handleOption: () => {
-                updateTM(0.8);
+                updateTM(0.75);
                 setResult(Math.floor(Math.random() * 100 + 1) > 60 ?
                     (usedProf ? 11 : 8) :
                     (usedProf ? 10 : 7));

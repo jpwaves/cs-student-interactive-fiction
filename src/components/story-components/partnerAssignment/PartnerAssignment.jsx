@@ -11,7 +11,7 @@ export default function PartnerAssignment(props) {
             path: "Contact them now",
             handleOption: () => {
                 setStartEarly(true);
-                updateTM(0.75);
+                updateTM(0.5);
                 updateScenario(6);
             }
         },

@@ -10,7 +10,7 @@ export default function CurvedExam(props) {
         {
             path: "Continue",
             handleOption: () => {
-                updateGrade(10);
+                updateGrade(20);
                 updateScenario(15);
             }
         },
