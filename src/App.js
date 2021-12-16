@@ -20,6 +20,12 @@ import CurvedExam from "./components/story-components/finalExams/CurvedExam";
 import Ending from "./components/story-components/ending/Ending";
 import GameOver from "./components/story-components/gameOver/GameOver";
 import ChooseEditor from "./components/story-components/chooseEditor/ChooseEditor";
+import homeMusic from "./assets/sounds/home-screen.mp3";
+import DropOut from "./components/story-components/ending/DropOut";
+import SwitchMajors from "./components/story-components/ending/SwitchMajors";
+
+const audio = new Audio(homeMusic);
+audio.loop = true;
 
 function App() {
   const [grade, setGrade] = useState(100);
@@ -34,7 +40,8 @@ function App() {
   const [documentation, setDocumentation] = useState();
   const [editorIcon, setEditorIcon] = useState("");
   const appBkgdRef = useRef(null);
-  const keyScenarios = [4, 5, 8, 9, 11, 12, 13, 14];
+  const keyScenarios = [4, 5, 8, 9, 11, 12, 13, 14, 15];
+
 
   const calcGrade = () => {
     console.log("timeMultiplier: " + timeMultiplier);
@@ -62,10 +69,14 @@ function App() {
       setGrade(0);
     } else if (scenarioIdx === 0) {
       // reset to defaults if the game is routed back to the start screen
+      audio.play();
+      audio.muted = false;
       setGrade(100);
       setBackground("default");
       setEditorIcon("");
       setTimeMultiplier(1);
+    } else if (scenarioIdx === 2) {
+      audio.muted = true;
     }
     renderScenario();
   }, [scenarioIdx]);
@@ -102,6 +113,8 @@ function App() {
     15: <Ending updateScenario={updateScenario} grade={grade} calcGrade={getGrade} />,
     16: <NoCheatOrPlagarize updateScenario={updateScenario} />,
     17: <GameOver updateScenario={updateScenario} />,
+    18: <SwitchMajors updateScenario={updateScenario} />,
+    19: <DropOut updateScenario={updateScenario} />,
   }
 
   const renderScenario = () => {

@@ -27,15 +27,15 @@ body {
 }
 
 .windows {
-  background-image: url("./assets/windows-background.jpg");
+  background-image: url("./assets/img/windows-background.jpg");
 }
 
 .macos {
-  background-image: url("./assets/macos-background.jpg");
+  background-image: url("./assets/img/macos-background.jpg");
 }
 
 .linux {
-  background-image: url("./assets/linux-background.jpg");
+  background-image: url("./assets/img/linux-background.jpg");
 }
 
 .top-bar {

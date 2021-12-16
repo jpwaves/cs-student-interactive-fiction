@@ -1,3 +1,7 @@
+import windowsStartup from "../../../assets/sounds/windows-startup.mp3";
+import macStartup from "../../../assets/sounds/mac-startup.mp3";
+import linuxStartup from "../../../assets/sounds/linux-startup.wav";
+
 import React from "react";
 import Scenario from "../../page-components/scenario/Scenario";
 
@@ -16,6 +20,7 @@ export default function BeginSemester(props) {
     {
       path: "Windows",
       handleOption: () => {
+        new Audio(windowsStartup).play();
         setBackground("windows");
         updateScenario(2);
       }
@@ -23,6 +28,7 @@ export default function BeginSemester(props) {
     {
       path: "MacOS",
       handleOption: () => {
+        new Audio(macStartup).play();
         setBackground("macos");
         updateScenario(2);
       }
@@ -30,8 +36,21 @@ export default function BeginSemester(props) {
     {
       path: "Linux",
       handleOption: () => {
+        new Audio(linuxStartup).play();
         setBackground("linux");
         updateScenario(2);
+      }
+    },
+    {
+      path: "Switch majors",
+      handleOption: () => {
+        updateScenario(18);
+      }
+    },
+    {
+      path: "Drop out of college",
+      handleOption: () => {
+        updateScenario(19);
       }
     },
   ];

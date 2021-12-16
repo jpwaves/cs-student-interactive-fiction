@@ -1,3 +1,4 @@
+import dontCheat from "../../../assets/sounds/game-over-trombone.wav";
 import React from "react";
 import Scenario from "../../page-components/scenario/Scenario";
 
@@ -10,6 +11,7 @@ export default function NoCheatOrPlagarize(props) {
         {
             path: "Continue",
             handleOption: () => {
+                new Audio(dontCheat).play();
                 updateScenario(17);
             }
         },

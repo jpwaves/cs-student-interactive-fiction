@@ -1,9 +1,9 @@
-import intellij from "../../../assets/intellij.png";
-import notepad from "../../../assets/notepad.png";
-import pythonIdle from "../../../assets/python-idle.png";
-import vim from "../../../assets/vim.png";
-import vscode from "../../../assets/vscode.png";
-import xcode from "../../../assets/xcode.png";
+import intellij from "../../../assets/img/intellij.png";
+import notepad from "../../../assets/img/notepad.png";
+import pythonIdle from "../../../assets/img/python-idle.png";
+import vim from "../../../assets/img/vim.png";
+import vscode from "../../../assets/img/vscode.png";
+import xcode from "../../../assets/img/xcode.png";
 
 import React from "react";
 import Scenario from "../../page-components/scenario/Scenario";
@@ -53,6 +53,18 @@ export default function ChooseEditor(props) {
                 setEditorIcon(vim);
                 Math.floor(Math.random() * 100) + 1 > 10 ? updateTM(3) : updateTM(1.5);
                 updateScenario(3);
+            }
+        },
+        {
+            path: "Switch majors",
+            handleOption: () => {
+                updateScenario(18);
+            }
+        },
+        {
+            path: "Drop out of college",
+            handleOption: () => {
+                updateScenario(19);
             }
         },
     ];

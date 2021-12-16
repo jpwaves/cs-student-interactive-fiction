@@ -1,4 +1,7 @@
-import React from "react";
+import lateHorn from "../../../assets/sounds/assignment-late-horn.wav";
+import lateTrombone from "../../../assets/sounds/assignment-late-trombone.wav";
+import wakeUpAlarm from "../../../assets/sounds/wake-up-alarm.wav";
+import React, { useEffect } from "react";
 import Scenario from "../../page-components/scenario/Scenario";
 
 const results = {
@@ -35,7 +38,30 @@ export default function PartnerResult(props) {
                 updateScenario(9);
             }
         },
+        {
+            path: "Switch majors",
+            handleOption: () => {
+                updateScenario(18);
+            }
+        },
+        {
+            path: "Drop out of college",
+            handleOption: () => {
+                updateScenario(19);
+            }
+        },
     ];
+
+    // on load, play a specific sound for different results
+    useEffect(() => {
+        if ([5, 14].includes(result)) {
+            const n = Math.floor(Math.random() * 100) + 1;
+            n > 50 ? new Audio(lateHorn).play() : new Audio(lateTrombone).play();
+        }
+        if ([8, 11].includes(result)) {
+            new Audio(wakeUpAlarm).play();
+        }
+    }, []);
 
     return <Scenario title={title} desc={scenario} options={options} />;
 }

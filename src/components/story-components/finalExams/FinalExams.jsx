@@ -18,13 +18,25 @@ export default function FinalExams(props) {
         {
             path: "Procrastinate studying",
             handleOption: () => {
-                updateScenario(Math.floor(Math.random() * 100 + 1) > 70 ? 14 : 15);
+                updateScenario(Math.floor(Math.random() * 100 + 1) > 80 ? 14 : 15);
             }
         },
         {
             path: "Cheat during the exam",
             handleOption: () => {
                 updateScenario(16);
+            }
+        },
+        {
+            path: "Switch majors",
+            handleOption: () => {
+                updateScenario(18);
+            }
+        },
+        {
+            path: "Drop out of college",
+            handleOption: () => {
+                updateScenario(19);
             }
         },
     ];

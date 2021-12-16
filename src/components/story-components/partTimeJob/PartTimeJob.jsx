@@ -21,6 +21,18 @@ export default function PartTimeJob(props) {
                 updateScenario(4);
             }
         },
+        {
+            path: "Switch majors",
+            handleOption: () => {
+                updateScenario(18);
+            }
+        },
+        {
+            path: "Drop out of college",
+            handleOption: () => {
+                updateScenario(19);
+            }
+        },
     ];
 
     return <Scenario title={title} desc={scenario} options={options} />;

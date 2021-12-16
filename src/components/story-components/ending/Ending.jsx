@@ -1,16 +1,24 @@
+import applause from "../../../assets/sounds/ending-applause.wav";
+import sneeze from "../../../assets/sounds/sneeze.wav";
+import failure from "../../../assets/sounds/game-over-trombone.wav";
 import React from "react";
 import Scenario from "../../page-components/scenario/Scenario";
 
 const determineTitle = (grade) => {
     if (grade >= 90) {
+        new Audio(applause).play();
         return "You're a CS WIZ (or really lucky)!";
     } else if (grade >= 80) {
+        new Audio(applause).play();
         return "Nice, you passed...";
     } else if (grade >= 70) {
+        new Audio(sneeze).play();
         return "Rough semester... get'em next time?";
     } else if (grade >= 60) {
+        new Audio(failure).play();
         return "You Failed :(";
     } else {
+        new Audio(failure).play();
         return "F IS FOR FAILURE";
     }
 }

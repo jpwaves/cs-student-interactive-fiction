@@ -1,3 +1,5 @@
+import noSleep from "../../../assets/sounds/no-sleep.wav";
+import sleep from "../../../assets/sounds/sleep-snore.wav";
 import React from "react";
 import Scenario from "../../page-components/scenario/Scenario";
 
@@ -14,6 +16,7 @@ export default function PartnerSubOptions(props) {
         {
             path: "Stay up and work on the homework",
             handleOption: () => {
+                new Audio(noSleep).play();
                 const n = Math.floor(Math.random() * 100 + 1);
                 if (n > 60) {
                     setResult(usedProf ? 11 : 8);
@@ -28,6 +31,7 @@ export default function PartnerSubOptions(props) {
         {
             path: "Sleep",
             handleOption: () => {
+                new Audio(sleep).play();
                 const n = Math.floor(Math.random() * 100 + 1);
                 if (n > 30) {
                     setResult(usedProf ? 11 : 8);
@@ -37,6 +41,18 @@ export default function PartnerSubOptions(props) {
                     updateTM(0.8);
                 }
                 updateScenario(8);
+            }
+        },
+        {
+            path: "Switch majors",
+            handleOption: () => {
+                updateScenario(18);
+            }
+        },
+        {
+            path: "Drop out of college",
+            handleOption: () => {
+                updateScenario(19);
             }
         },
     ];

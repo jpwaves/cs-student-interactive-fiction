@@ -8,7 +8,7 @@ export default function StartGame(props) {
         shoes of a CS student who is taking a semester of classes. The scenarios you
         encounter on your journey are partially based on what I believe CS students
         typically have to deal with and this is mixed in with my personal experiences
-        as a CS student. The purpose of this game is to be a light hearted but 
+        as a CS student. The purpose of this game is to be a light hearted, fun, and 
         informative way of showing others some of the things CS students do in a typical
         semester and the common situations we face. To get started, click the "Start Game"
         button below! I hope you enjoy the game!`;
