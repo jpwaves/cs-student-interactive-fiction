@@ -11,7 +11,8 @@ export default function StartGame(props) {
         as a CS student. The purpose of this game is to be a light-hearted, fun, and 
         informative way of showing others some of the things CS students do in a typical
         semester and the common situations we face. To get started, click the "Start Game"
-        button below! I hope you enjoy the game!`;
+        button below! I hope you enjoy the game! (NOTE: You may need to configure your browser settings
+        to grant the website autoplay permission privileges to hear the game's sound effects.)`;
 
     const options = [
         {
