@@ -17,6 +17,7 @@ export default function FinalExams(props) {
         {
             path: "Procrastinate studying",
             handleOption: () => {
+                updateTM(3);
                 updateScenario(Math.floor(Math.random() * 100 + 1) > 80 ? 14 : 15);
             }
         },
