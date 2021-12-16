@@ -7,7 +7,6 @@ const lateScenario = `Unfortunately, your partner didn't contact you either. Now
 
 export default function PartnerOptions(props) {
     const { updateScenario, startEarly, setUsedProf, setResult, updateTM } = props;
-    console.log("start early: " + startEarly);
     const title = "First Partner Assignment Pt. 2";
     const scenario = startEarly ? earlyScenario : lateScenario;
 

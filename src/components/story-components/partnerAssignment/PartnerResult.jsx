@@ -27,8 +27,7 @@ const results = {
 };
 export default function PartnerResult(props) {
     const { updateScenario, result } = props;
-    const title = "";
-    console.log("result:" + result);
+    const title = `First Partner Assignment Pt. ${[7, 8, 10, 11].includes(result) ? 4 : 3}`;
     const scenario = results[result];
 
     const options = [

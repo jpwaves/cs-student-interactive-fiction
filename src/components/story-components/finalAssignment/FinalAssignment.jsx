@@ -10,7 +10,6 @@ export default function FinalAssignment(props) {
         {
             path: "Add documentation",
             handleOption: () => {
-                console.log("nav to options for time");
                 setDocumentation(true);
                 updateScenario(12);
             }
@@ -18,7 +17,6 @@ export default function FinalAssignment(props) {
         {
             path: "Skip documentation",
             handleOption: () => {
-                console.log("nav to optiosn w/o time");
                 setDocumentation(false);
                 updateScenario(12);
             }
@@ -26,7 +24,6 @@ export default function FinalAssignment(props) {
         {
             path: "Plagarize someone else's documentation",
             handleOption: () => {
-                console.log("nav to optiosn w/o time");
                 updateScenario(16);
             }
         },

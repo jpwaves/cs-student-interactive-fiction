@@ -9,7 +9,7 @@ const ohScenario = `You were too late to go to office hours and didn't end up ge
 
 export default function PartnerSubOptions(props) {
     const { updateScenario, usedProf, setResult, updateTM } = props;
-    const title = "First Partner Assignment Pt. 2";
+    const title = "First Partner Assignment Pt. 3";
     const scenario = usedProf ? profScenario : ohScenario;
 
     const options = [

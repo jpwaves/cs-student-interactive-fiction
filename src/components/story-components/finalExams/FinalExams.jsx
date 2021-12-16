@@ -10,8 +10,7 @@ export default function FinalExams(props) {
         {
             path: "Study for finals",
             handleOption: () => {
-                console.log("nav to options for time");
-                updateGrade(Math.random() * 5 - 3); // randomize this within reason
+                updateGrade(Math.random() * 7 - 3);
                 updateScenario(15);
             }
         },

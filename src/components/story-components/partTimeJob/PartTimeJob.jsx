@@ -10,7 +10,6 @@ export default function PartTimeJob(props) {
         {
             path: "Yes",
             handleOption: () => {
-                console.log("add parttimer icon on side, add 2 to time mult");
                 updateTM(1.5);
                 updateScenario(4);
             }
