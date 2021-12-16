@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/cs-student-interactive-fiction/static/css/main.ec8e1472.chunk.css",
-    "main.js": "/cs-student-interactive-fiction/static/js/main.9eda3081.chunk.js",
-    "main.js.map": "/cs-student-interactive-fiction/static/js/main.9eda3081.chunk.js.map",
+    "main.css": "/cs-student-interactive-fiction/static/css/main.b29130bd.chunk.css",
+    "main.js": "/cs-student-interactive-fiction/static/js/main.9b922273.chunk.js",
+    "main.js.map": "/cs-student-interactive-fiction/static/js/main.9b922273.chunk.js.map",
     "runtime-main.js": "/cs-student-interactive-fiction/static/js/runtime-main.21404a26.js",
     "runtime-main.js.map": "/cs-student-interactive-fiction/static/js/runtime-main.21404a26.js.map",
     "static/js/2.1f6194a5.chunk.js": "/cs-student-interactive-fiction/static/js/2.1f6194a5.chunk.js",
@@ -10,19 +10,32 @@
     "static/js/3.2a990095.chunk.js": "/cs-student-interactive-fiction/static/js/3.2a990095.chunk.js",
     "static/js/3.2a990095.chunk.js.map": "/cs-student-interactive-fiction/static/js/3.2a990095.chunk.js.map",
     "index.html": "/cs-student-interactive-fiction/index.html",
-    "static/css/main.ec8e1472.chunk.css.map": "/cs-student-interactive-fiction/static/css/main.ec8e1472.chunk.css.map",
+    "static/css/main.b29130bd.chunk.css.map": "/cs-student-interactive-fiction/static/css/main.b29130bd.chunk.css.map",
     "static/js/2.1f6194a5.chunk.js.LICENSE.txt": "/cs-student-interactive-fiction/static/js/2.1f6194a5.chunk.js.LICENSE.txt",
+    "static/media/assignment-late-horn.0bb14454.wav": "/cs-student-interactive-fiction/static/media/assignment-late-horn.0bb14454.wav",
+    "static/media/assignment-late-trombone.0ace3615.wav": "/cs-student-interactive-fiction/static/media/assignment-late-trombone.0ace3615.wav",
+    "static/media/curve.b222ebf0.wav": "/cs-student-interactive-fiction/static/media/curve.b222ebf0.wav",
+    "static/media/ending-applause.04224f99.wav": "/cs-student-interactive-fiction/static/media/ending-applause.04224f99.wav",
+    "static/media/game-over-trombone.5b67b7bb.wav": "/cs-student-interactive-fiction/static/media/game-over-trombone.5b67b7bb.wav",
+    "static/media/home-screen.5e490514.mp3": "/cs-student-interactive-fiction/static/media/home-screen.5e490514.mp3",
     "static/media/intellij.11b68713.png": "/cs-student-interactive-fiction/static/media/intellij.11b68713.png",
     "static/media/App.css": "/cs-student-interactive-fiction/static/media/windows-background.9684767a.jpg",
+    "static/media/linux-startup.813939a0.wav": "/cs-student-interactive-fiction/static/media/linux-startup.813939a0.wav",
+    "static/media/mac-startup.9e31eb81.mp3": "/cs-student-interactive-fiction/static/media/mac-startup.9e31eb81.mp3",
+    "static/media/no-sleep.bff8ae78.wav": "/cs-student-interactive-fiction/static/media/no-sleep.bff8ae78.wav",
     "static/media/notepad.0e4ec9bb.png": "/cs-student-interactive-fiction/static/media/notepad.0e4ec9bb.png",
+    "static/media/sleep-snore.7c8e4a16.wav": "/cs-student-interactive-fiction/static/media/sleep-snore.7c8e4a16.wav",
+    "static/media/sneeze.4d0399be.wav": "/cs-student-interactive-fiction/static/media/sneeze.4d0399be.wav",
     "static/media/vim.e694faea.png": "/cs-student-interactive-fiction/static/media/vim.e694faea.png",
     "static/media/vscode.6acf7130.png": "/cs-student-interactive-fiction/static/media/vscode.6acf7130.png",
+    "static/media/wake-up-alarm.8847f0e9.wav": "/cs-student-interactive-fiction/static/media/wake-up-alarm.8847f0e9.wav",
+    "static/media/windows-startup.4856e894.mp3": "/cs-student-interactive-fiction/static/media/windows-startup.4856e894.mp3",
     "static/media/xcode.1684199e.png": "/cs-student-interactive-fiction/static/media/xcode.1684199e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.21404a26.js",
     "static/js/2.1f6194a5.chunk.js",
-    "static/css/main.ec8e1472.chunk.css",
-    "static/js/main.9eda3081.chunk.js"
+    "static/css/main.b29130bd.chunk.css",
+    "static/js/main.9b922273.chunk.js"
   ]
 }
