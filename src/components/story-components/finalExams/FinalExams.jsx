@@ -11,7 +11,7 @@ export default function FinalExams(props) {
             path: "Study for finals",
             handleOption: () => {
                 updateGrade(Math.random() * 7 - 3);
-                updateScenario(15);
+                updateScenario(Math.floor(Math.random() * 100 + 1) > 95 ? 14 : 15);
             }
         },
         {
