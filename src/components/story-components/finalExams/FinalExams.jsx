@@ -2,7 +2,7 @@ import React from "react";
 import Scenario from "../../page-components/scenario/Scenario";
 
 export default function FinalExams(props) {
-    const { updateScenario, updateGrade } = props;
+    const { updateScenario, updateGrade, updateTM } = props;
     const title = "Final Exams";
     const scenario = `It's final exams week! Your final exam is coming up in 3 days, so it's now or never! What will you do?`;
 

@@ -108,7 +108,7 @@ function App() {
     10: <NoSideProjects updateScenario={updateScenario} />,
     11: <FinalAssignment updateScenario={updateScenario} setDocumentation={setDocumentation} />,
     12: <FinalAssignmentResult updateScenario={updateScenario} documentation={documentation} updateGrade={incrementGrade} />,
-    13: <FinalExams updateScenario={updateScenario} updateGrade={incrementGrade} />,
+    13: <FinalExams updateScenario={updateScenario} updateGrade={incrementGrade} updateTM={multiplyTM} />,
     14: <CurvedExam updateScenario={updateScenario} updateGrade={incrementGrade} />,
     15: <Ending updateScenario={updateScenario} grade={grade} calcGrade={getGrade} />,
     16: <NoCheatOrPlagarize updateScenario={updateScenario} />,
